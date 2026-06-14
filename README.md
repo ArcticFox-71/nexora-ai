@@ -12,7 +12,7 @@
 
 ## 🚀 Live Demo
 
-🔗 **[Nexora AI — Live App](https://your-app-url.streamlit.app)**
+🔗 **[Nexora AI — Live App](https://nexora-ai.streamlit.app)**
 
 ---
 
