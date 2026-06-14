@@ -1,11 +1,10 @@
-streamlit==1.35.0
+streamlit
 google-generativeai==0.7.2
 pdfplumber==0.11.0
 PyPDF2==3.0.1
-pandas==2.1.4
-plotly==5.22.0
+pandas
+plotly
 python-dotenv==1.0.1
 requests==2.32.3
-Pillow==10.3.0
+Pillow
 protobuf==3.20.3
-grpcio==1.59.3
