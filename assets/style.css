@@ -1,0 +1,371 @@
+/* ============================================================
+   AI Job Assistant - Fixed CSS for Streamlit 1.58
+   ============================================================ */
+
+/* --- Main background --- */
+.stApp {
+    background: linear-gradient(135deg, #0f0c29 0%, #302b63 50%, #24243e 100%);
+    min-height: 100vh;
+}
+
+/* --- Main content area --- */
+.main .block-container {
+    background: transparent;
+    padding-top: 2rem;
+}
+
+/* --- Sidebar --- */
+section[data-testid="stSidebar"] {
+    background: linear-gradient(180deg, #1a1a2e 0%, #16213e 100%) !important;
+    border-right: 1px solid #4a4a8a;
+}
+
+section[data-testid="stSidebar"] * {
+    color: #e0e0e0 !important;
+}
+
+/* --- All text --- */
+.stApp p, .stApp label, .stApp span {
+    color: #e2e8f0;
+}
+
+/* --- Headings --- */
+.stApp h1, .stApp h2, .stApp h3 {
+    color: #a78bfa !important;
+}
+
+/* --- Buttons --- */
+.stButton > button {
+    background: linear-gradient(135deg, #7c3aed, #4f46e5) !important;
+    color: white !important;
+    border: none !important;
+    border-radius: 10px !important;
+    font-weight: 600 !important;
+    transition: all 0.3s ease !important;
+    width: 100%;
+}
+
+.stButton > button:hover {
+    background: linear-gradient(135deg, #6d28d9, #4338ca) !important;
+    box-shadow: 0 4px 20px rgba(124, 58, 237, 0.5) !important;
+    transform: translateY(-2px) !important;
+}
+
+/* --- Input fields --- */
+.stTextInput > div > div > input {
+    background: rgba(30, 30, 63, 0.8) !important;
+    border: 1px solid #4a4a8a !important;
+    border-radius: 10px !important;
+    color: white !important;
+    padding: 10px 14px !important;
+}
+
+.stTextInput > div > div > input:focus {
+    border-color: #7c3aed !important;
+    box-shadow: 0 0 0 2px rgba(124, 58, 237, 0.3) !important;
+}
+
+.stTextInput > div > div > input::placeholder {
+    color: #6b7280 !important;
+}
+
+/* --- Selectbox --- */
+.stSelectbox > div > div {
+    background: rgba(30, 30, 63, 0.8) !important;
+    border: 1px solid #4a4a8a !important;
+    border-radius: 10px !important;
+    color: white !important;
+}
+
+/* --- Tabs --- */
+.stTabs [data-baseweb="tab-list"] {
+    background: rgba(26, 26, 46, 0.9) !important;
+    border-radius: 12px !important;
+    padding: 6px !important;
+    gap: 4px !important;
+    border: 1px solid #4a4a8a !important;
+}
+
+.stTabs [data-baseweb="tab"] {
+    background: transparent !important;
+    border-radius: 8px !important;
+    color: #9ca3af !important;
+    font-weight: 500 !important;
+    padding: 8px 20px !important;
+    border: none !important;
+}
+
+.stTabs [aria-selected="true"] {
+    background: linear-gradient(135deg, #7c3aed, #4f46e5) !important;
+    color: white !important;
+    font-weight: 700 !important;
+}
+
+/* --- Metrics --- */
+[data-testid="stMetric"] {
+    background: linear-gradient(145deg, #1e1e3f, #2d2d5e) !important;
+    border: 1px solid #4a4a8a !important;
+    border-radius: 12px !important;
+    padding: 16px !important;
+}
+
+[data-testid="stMetricValue"] {
+    color: #a78bfa !important;
+    font-size: 28px !important;
+    font-weight: 800 !important;
+}
+
+[data-testid="stMetricLabel"] {
+    color: #9ca3af !important;
+}
+
+/* --- Expander --- */
+.streamlit-expanderHeader {
+    background: rgba(30, 30, 63, 0.8) !important;
+    border: 1px solid #4a4a8a !important;
+    border-radius: 10px !important;
+    color: #e2e8f0 !important;
+}
+
+.streamlit-expanderContent {
+    background: rgba(26, 26, 46, 0.8) !important;
+    border: 1px solid #4a4a8a !important;
+    border-top: none !important;
+}
+
+/* --- Alerts --- */
+.stSuccess {
+    background: rgba(52, 211, 153, 0.15) !important;
+    border: 1px solid #34d399 !important;
+    border-radius: 10px !important;
+    color: #6ee7b7 !important;
+}
+
+.stWarning {
+    background: rgba(251, 191, 36, 0.15) !important;
+    border: 1px solid #fbbf24 !important;
+    border-radius: 10px !important;
+}
+
+.stError {
+    background: rgba(239, 68, 68, 0.15) !important;
+    border: 1px solid #ef4444 !important;
+    border-radius: 10px !important;
+}
+
+.stInfo {
+    background: rgba(96, 165, 250, 0.15) !important;
+    border: 1px solid #60a5fa !important;
+    border-radius: 10px !important;
+}
+
+/* --- File uploader --- */
+[data-testid="stFileUploader"] {
+    background: rgba(30, 30, 63, 0.5) !important;
+    border: 2px dashed #7c3aed !important;
+    border-radius: 16px !important;
+    padding: 20px !important;
+}
+
+/* --- Divider --- */
+hr {
+    border-color: #374151 !important;
+    margin: 16px 0 !important;
+}
+
+/* --- Progress bar --- */
+.stProgress > div > div > div > div {
+    background: linear-gradient(90deg, #7c3aed, #60a5fa) !important;
+}
+
+/* --- Scrollbar --- */
+::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+}
+::-webkit-scrollbar-track {
+    background: #1a1a2e;
+}
+::-webkit-scrollbar-thumb {
+    background: #4a4a8a;
+    border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #7c3aed;
+}
+
+/* --- Radio buttons --- */
+.stRadio > div {
+    background: rgba(30, 30, 63, 0.5) !important;
+    border-radius: 10px !important;
+    padding: 8px !important;
+}
+
+/* --- Checkbox --- */
+.stCheckbox > label {
+    color: #e2e8f0 !important;
+}
+
+/* --- Slider --- */
+.stSlider > div > div > div {
+    background: linear-gradient(90deg, #7c3aed, #4f46e5) !important;
+}
+
+/* --- Job card --- */
+.job-card {
+    background: linear-gradient(145deg, #1e1e3f, #2d2d5e);
+    border: 1px solid #4a4a8a;
+    border-radius: 16px;
+    padding: 20px;
+    margin: 12px 0;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.4);
+}
+
+.job-card:hover {
+    border-color: #7c7cff;
+    box-shadow: 0 8px 30px rgba(124,124,255,0.25);
+    transform: translateY(-3px);
+}
+
+.job-title {
+    font-size: 20px;
+    font-weight: 700;
+    color: #a78bfa;
+    margin-bottom: 4px;
+}
+
+.job-company {
+    font-size: 15px;
+    color: #60a5fa;
+    font-weight: 500;
+}
+
+.job-location {
+    font-size: 13px;
+    color: #9ca3af;
+    margin-top: 4px;
+}
+
+/* --- Skill tags --- */
+.skill-tag {
+    display: inline-block;
+    background: rgba(124, 58, 237, 0.25);
+    border: 1px solid #7c3aed;
+    color: #c4b5fd;
+    padding: 3px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    margin: 2px;
+    font-weight: 500;
+}
+
+.skill-tag-missing {
+    display: inline-block;
+    background: rgba(239, 68, 68, 0.2);
+    border: 1px solid #ef4444;
+    color: #fca5a5;
+    padding: 3px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    margin: 2px;
+}
+
+.skill-tag-match {
+    display: inline-block;
+    background: rgba(52, 211, 153, 0.2);
+    border: 1px solid #34d399;
+    color: #6ee7b7;
+    padding: 3px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    margin: 2px;
+}
+
+/* --- Match score badges --- */
+.match-score-high {
+    background: linear-gradient(135deg, #059669, #34d399);
+    color: white;
+    padding: 10px 24px;
+    border-radius: 30px;
+    font-size: 20px;
+    font-weight: 800;
+    display: inline-block;
+    box-shadow: 0 4px 15px rgba(52,211,153,0.4);
+}
+
+.match-score-medium {
+    background: linear-gradient(135deg, #d97706, #fbbf24);
+    color: white;
+    padding: 10px 24px;
+    border-radius: 30px;
+    font-size: 20px;
+    font-weight: 800;
+    display: inline-block;
+    box-shadow: 0 4px 15px rgba(251,191,36,0.4);
+}
+
+.match-score-low {
+    background: linear-gradient(135deg, #dc2626, #f87171);
+    color: white;
+    padding: 10px 24px;
+    border-radius: 30px;
+    font-size: 20px;
+    font-weight: 800;
+    display: inline-block;
+    box-shadow: 0 4px 15px rgba(239,68,68,0.4);
+}
+
+/* --- Section header --- */
+.section-header {
+    font-size: 28px;
+    font-weight: 800;
+    background: linear-gradient(90deg, #a78bfa, #60a5fa);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #374151;
+}
+
+/* --- AI analysis box --- */
+.ai-box {
+    background: linear-gradient(145deg, #0f172a, #1e1b4b);
+    border: 1px solid #4338ca;
+    border-left: 4px solid #818cf8;
+    border-radius: 12px;
+    padding: 24px;
+    margin: 12px 0;
+    line-height: 1.8;
+    color: #e2e8f0;
+    font-size: 14px;
+    white-space: pre-wrap;
+}
+
+/* --- Upload area --- */
+.upload-area {
+    background: linear-gradient(145deg, #1e1e3f, #2d2d5e);
+    border: 2px dashed #7c3aed;
+    border-radius: 16px;
+    padding: 40px;
+    text-align: center;
+    margin: 16px 0;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.upload-area:hover {
+    border-color: #a78bfa;
+    background: linear-gradient(145deg, #2d2d5e, #3d3d7e);
+}
+
+/* --- Caption text --- */
+.stApp .stCaption {
+    color: #6b7280 !important;
+}
+
+/* --- Spinner --- */
+.stSpinner > div {
+    border-top-color: #7c3aed !important;
+}
